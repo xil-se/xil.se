@@ -113,7 +113,7 @@ int oldv19 = 0;
 while ( v19 != v20 )
 {
   if (oldv19 != v19) {
-    // When v19 wraps we need to reset the guess
+    // When v19 changes we need to reset the guess
     oldv19 = v19;
     guess_start = 0;
   }
