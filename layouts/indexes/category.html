@@ -3,7 +3,7 @@
 {{ partial "navbar.html" . }}
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <divyes>
             <div class="well well-sm">
                 <strong>Items in category <code>{{ .Title | lower }}</code></strong>
                 <ul class="list-unstyled">
@@ -14,10 +14,6 @@
             </div>
         </div>
 
-        <!-- Sidebar -->
-        <div class="col-md-3">
-        {{ partial "menu.html" . }}
-        </div>
     </div>
 {{ partial "footer.copyright.html" . }}
 </div>
