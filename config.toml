@@ -1,0 +1,4 @@
+baseurl = "http://www.xil.se/beta/"
+languageCode = "en-us"
+title = "www.xil.se"
+canonifyurls = true
