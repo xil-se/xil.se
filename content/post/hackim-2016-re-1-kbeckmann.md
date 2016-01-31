@@ -1,6 +1,6 @@
 +++
 date        = "2016-01-31"
-title       = "HackIM 2016 RE 2 'ZorroPub' Writeup"
+title       = "HackIM 2016 RE 1 'ZorroPub' Writeup"
 description = "ZorroPub . 100pts"
 categories  = [ "writeups" ]
 tags        = [ "ctf", "hackim", "reversing" ]
