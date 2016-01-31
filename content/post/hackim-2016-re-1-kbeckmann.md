@@ -96,7 +96,7 @@ return result;
 ```
 
 # Solution
-Based on the decompilated code, we should enter "10" drinks and then enter 10 values between 0x10 and 0xffff.
+Based on the decompiled code, we should enter "10" drinks and then enter 10 values between 0x10 and 0xffff.
 
 The binary generates a seed based on the input that is used to seed rand() which is later used. Instead of solving the mystery input, I bruteforced the seed value to solve this.
 
