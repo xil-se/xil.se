@@ -1,7 +1,7 @@
 +++
 date        = "2016-01-31"
 title       = "HackIM 2016 Programming 1 Writeup"
-description = "Programming 1 . 200pts"
+description = "Programming 1 - 200pts"
 categories  = [ "writeups" ]
 tags        = [ "ctf", "hackim" ]
 +++
