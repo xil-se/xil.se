@@ -141,7 +141,7 @@ int main()
 }
 ```
 
-Running the cracher, we see the following output:
+Running the cracker, we see the following output:
 
 ```
 $ gcc crack.c -lcrypto -o crack && ./crack
