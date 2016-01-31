@@ -13,7 +13,7 @@ Attachement: http://ctf.nullcon.net/trivia/trivia4.txt
 
 # Solution
 
-The file contains the esoteric Ook language, we can convert it to text using [this tool](http://www.splitbrain.org/services/ookl).  
+The file contains the esoteric Ook language, we can convert it to text using [this tool](http://www.splitbrain.org/services/ook).  
 We get:
 
 > starting from 0.0.0.0, print the following IPs.  
