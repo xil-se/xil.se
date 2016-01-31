@@ -13,6 +13,7 @@ Attachement:
 http://ctf.nullcon.net/crypto/crypto1.zip
 
 Contents:
+
 * Heart_clear.txt
 * Heart_crypt.txt
 * Mind_crypt.txt
@@ -30,15 +31,16 @@ def xor_strings(a, b):
 heart_clear = open('Heart_clear.txt').read()
 heart_crypt = open('Heart_crypt.txt').read()
 key = xor_strings(heart_clear, heart_crypt)
- 
+
 mind_crypt = open('Mind_crypt.txt').read()
 mind_clear = xor_strings(mind_crypt, key)
 print mind_clear
 ~~~
 
-Which gives us a link:   https://play.google.com/store/apps/collection/promotion_3001629_watch_live_games?hl=en 
+Which gives us a link:   https://play.google.com/store/apps/collection/promotion_3001629_watch_live_games?hl=en
 
 At first I thought that was the flag (because HackIm has no flag format, tsk, tsk), but it was not accepted, if you follow the link, the header is:
+
 > Never Miss a Game
 
 Which is the flag.
