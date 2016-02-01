@@ -4,6 +4,7 @@ title       = "HackIM 2016 RE 2 'Pseudorandom' Writeup"
 description = "Random as F*!@ . 300pts"
 categories  = [ "writeups" ]
 tags        = [ "ctf", "hackim", "reversing" ]
+authors     = "kbeckmann"
 +++
 
 # Problem

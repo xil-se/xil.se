@@ -1,5 +1,13 @@
 {{ partial "head.html" . }}
 <div class="content container">
+  {{ if eq .Title "Posts" }}
+  <h1>Archive</h1>
+  {{ else if eq .Data.Plural "categories" }}
+  <h1>Posts in "{{ .Title | lower }}"</h1>
+  {{ else if eq .Data.Plural "authors" }}
+  <h1>Posts by "{{ .Title | lower }}"</h1>
+  {{ end }}
+
   <ul class="posts">
   {{ range .Data.Pages }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>

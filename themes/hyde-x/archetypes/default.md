@@ -1,6 +1,7 @@
 +++
-title = ""
+date        = ""
+title       = ""
 description = ""
-keywords = []
-categories = []
+categories  = [  ]
+authors     = ""
 +++

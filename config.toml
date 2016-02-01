@@ -1,17 +1,30 @@
 baseurl = "https://www.xil.se/"
 languageCode = "en-us"
-title = "www.xil.se"
+title = "Our Blog"
 canonifyurls = true
 theme = "hyde-x"
 
+[author]
+	name = "xil.se"
+
+[taxonomies]
+    category = "categories"
+    author = "authors"
+
 [params]
     highlight = "github"
+    googleAnalytics = "UA-73118897-1"
     github = "https://github.com/xil-se"
     twitter = "https://twitter.com/xil_se_ctf"
+    rss = true
 
 [[menu.main]]
     name = "Archive"
     url = "/post/"
+
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
 
 [[menu.main]]
     name = "Projects"

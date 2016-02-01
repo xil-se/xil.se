@@ -4,6 +4,7 @@ title       = "HackIM 2016 Misc 2 Writeup"
 description = "Hiding In Plain Sight - 200pts"
 categories  = [ "writeups" ]
 tags        = [ "ctf", "hackim" ]
+authors     = "arturo182"
 +++
 
 # Problem

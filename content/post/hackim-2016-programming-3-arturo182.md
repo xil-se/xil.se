@@ -4,6 +4,7 @@ title       = "HackIM 2016 Programming 3 Writeup"
 description = "Programming 3 - 300pts"
 categories  = [ "writeups" ]
 tags        = [ "ctf", "hackim" ]
+authors     = "arturo182"
 +++
 
 # Problem
