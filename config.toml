@@ -1,3 +1,4 @@
+baseurl = "https://www.xil.se/"
 languageCode = "en-us"
 title = "www.xil.se"
 canonifyurls = true
