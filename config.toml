@@ -6,7 +6,6 @@ theme = "hyde-x"
 
 [params]
     highlight = "github"
-    gravatarHash = "asd"
     github = "https://github.com/xil-se"
     twitter = "https://twitter.com/xil_se_ctf"
 

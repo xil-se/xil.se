@@ -36,7 +36,7 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
@@ -57,7 +57,8 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #2d3c50;
+  border-right: 3px solid #37495c;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -128,7 +129,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
+    max-width: 68rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }

@@ -1,9 +1,8 @@
 <div class="sidebar">
   <div class="sidebar-about">
-    {{ if isset .Site.Params "gravatarHash" }}
-      <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarHash }}?s=200"
-           alt="gravatar" title="{{ .Site.Author.name }}">
-    {{ end }}
+      <img src="{{ "/imgs/logo.svg" | absURL }}"
+           alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}">
+
     <h1>{{ .Site.Author.name }}</h1>
     {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
   </div>
