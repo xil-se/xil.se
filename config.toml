@@ -1,4 +1,18 @@
-baseurl = "https://www.xil.se/"
 languageCode = "en-us"
 title = "www.xil.se"
 canonifyurls = true
+theme = "hyde-x"
+
+[params]
+    highlight = "github"
+    gravatarHash = "asd"
+    github = "https://github.com/xil-se"
+    twitter = "https://twitter.com/xil_se_ctf"
+
+[[menu.main]]
+    name = "Archive"
+    url = "/post/"
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
