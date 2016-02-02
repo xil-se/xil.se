@@ -10,7 +10,7 @@ authors     = "kbeckmann"
 # Problem
 
 We are provided with the following binary:
-```
+~~~
 $ file pseudorandom_bin
 pseudorandom_bin: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.24, BuildID[sha1]=5a0f467ef94ee8fa770ecda91c4326f00b2c6c30, stripped
 
@@ -23,32 +23,37 @@ $ ldd pseudorandom_bin
 	libz.so.1 => /usr/lib/libz.so.1 (0x00007fe7eedc2000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007fe7ef9f8000)
 
-```
+~~~
 
 Running it:
-```
+~~~
 $ ./pseudorandom_bin
 ./pseudorandom_bin: /usr/lib/libcrypto.so.1.0.0: no version information available (required by ./pseudorandom_bin)
 I will generate some random numbers.
 If you can give me those numbers, you will be $$rewarded$$
 hmm..thinking...
-```
+~~~
+
 Stalled. Looking at the decompiled binary, we see a couple of
-```
+
+~~~c++
 sleep(rand());
-```
+~~~
+
 Binary patch them to NOPs so we can run the binary.
 
 Entering some random value:
-```
+
+~~~
 2
 Nope. That is not what I am expecting!!
-```
+~~~
 
 So we have to feed it with something. Let's analyze the binary further.
 
 The interesting stuff decompiled:
-```
+
+~~~c++
 v24 = 0;
 v23 = a1;
 v22 = a2;
@@ -102,13 +107,14 @@ for ( i = 0; i < 40; i = i - 1320014540 + 1320014541 )
   v9[i] = (dword_6020D0[4 * i] & 0x4A | ~dword_6020D0[4 * i] & 0xB5) ^ (v9[i] & 0x4A | ~v9[i] & 0xB5);
 printf("The flag is:nullcon{%s}\n", v9);
 return v24;
-```
+~~~
 
 # Solution
+
 Being lazy and wanting to get results fast, I simply patched the code to brute force itself. Sorry for the different variable names here, they changed when decompiling the patched binary.
 
 
-```
+~~~c++
 int guess_start = 0;
 int oldv19 = 0;
 while ( v19 != v20 )
@@ -135,12 +141,12 @@ while ( v19 != v20 )
   v18 = x - 1;
   if ( !(unsigned int)sub_400EA0((unsigned int)v17, v18) )
   ...
-```
+~~~
 
 This prints the correct numbers to stderr that we then can feed to the actual binary. Had some problem with the hashing in my patched program, but doesn't matter, got the flag!
 
 
-```
+~~~
 $ ./crack 2> numbers
 $ ./pseudorandom_bin < numbers
 ./pseudorandom_bin: /usr/lib/libcrypto.so.1.0.0: no version information available (required by ./pseudorandom_bin)
@@ -150,7 +156,7 @@ hmm..thinking...OK. I am Ready. Enter Numbers.
 Good Job!!
 Wait till I fetch your reward...OK. Here it is
 The flag is:nullcon{50_5tup1d_ch4113ng3_f0r_e1i73er_71k3-y0u}
-```
+~~~
 
 
 **The flag: nullcon{50_5tup1d_ch4113ng3_f0r_e1i73er_71k3-y0u}** 
@@ -158,7 +164,7 @@ The flag is:nullcon{50_5tup1d_ch4113ng3_f0r_e1i73er_71k3-y0u}
 
 ### Full input to the binary
 
-```
+~~~
 $ cat numbers
 32768
 65536
@@ -283,4 +289,4 @@ $ cat numbers
 32
 2
 1
-```
+~~~
