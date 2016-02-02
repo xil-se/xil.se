@@ -1,0 +1,11 @@
+{{ if isset .Params "categories" }}
+    &middot;
+    {{ range .Params.categories }}
+	<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">
+        {{if index $.Site.Data.categories.icons . }}
+		<span class="fa {{ index $.Site.Data.categories.icons . }}" ></span>&nbsp;
+        {{end}}
+	{{ . }}</a>
+    {{ end }}
+    {{ end }}</span>
+

@@ -11,10 +11,7 @@
   <ul class="posts">
   {{ range .Data.Pages }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ if isset .Params "categories" }}
-    &middot;
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-    {{ end }}</span>
+    {{ partial "categories.html" . }}
     &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
   {{ end }}
   </ul>
