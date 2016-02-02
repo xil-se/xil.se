@@ -1,0 +1,8 @@
+{
+	"internet" : "fa-globe",
+	"writeups" : "fa-pencil",
+	"ctf"      : "fa-flag",
+        "magic"    : "fa-magic",
+        "tools"    : "fa-cogs",
+        "bug"      : "fa-bug"
+}

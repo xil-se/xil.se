@@ -4,10 +4,7 @@
     <h1>{{ .Title }}</h1>
     {{ $authorLink := (print "/authors/" .Params.authors) }}
     <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read &middot; by <a href="{{ $authorLink | absURL }}">{{ .Params.authors }}</a>{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-    {{ if isset .Params "categories" }}
-    <br/>
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-    {{ end }}</span>
+    {{ partial "categories.html" . }}
     {{ .Content }}
   </div>
   {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
