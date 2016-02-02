@@ -104,6 +104,8 @@ Based on the decompiled code, we should enter "10" drinks and then enter 10 valu
 
 The binary generates a seed based on the input that is used to seed rand() which is later used. Instead of solving the mystery input, I bruteforced the seed value to solve this.
 
+*Edit 2016-02-02: After reading [another write-up](https://github.com/Team-Sportsball/CTFs-2016/blob/master/nullcon-hackim-2016/RE_1/zorro_pub.md) I realized that the loop that checks if v10==10 doesn't mean that we have to input 10 drinks, it's enough with 1. And the "drink id" is the seed, so I could've solved it with a bash script.*
+
 
 ~~~c++
 int crack(int seed)
