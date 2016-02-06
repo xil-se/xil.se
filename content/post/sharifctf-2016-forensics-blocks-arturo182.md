@@ -29,7 +29,7 @@ To start with, `file` tells us nothing about the file, so we pop it into a hex e
 
 So, it seems it's a SQLite database, but the header magic (section 1.2 [here](https://www.sqlite.org/fileformat2.html)) is missing, let's look closely.
 
-A propper file:
+A proper file:
 
 ~~~none
 0000000: 5351 4c69 7465 2066 6f72 6d61 7420 3300  SQLite format 3.
