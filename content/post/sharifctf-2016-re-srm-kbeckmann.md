@@ -24,7 +24,7 @@ The binary has a lot of code, so I started to look for how it interacts with the
 
 sub_401280() calls message box APIs so it looks interesting. It turns out that this is where all the magic happens.
 
-It reads two inputs, a valid e-mail address and a serial number. I was over thinking this and thought i had to write an actual keygen that had to generate a key that only works with a specific e-mail address, but this was not the case.
+It reads two inputs, a valid e-mail address and a serial number. I was over thinking this and thought I had to write an actual keygen that had to generate a key that only works with a specific e-mail address, but this was not the case.
 
 The key was hard-coded in the check.
 

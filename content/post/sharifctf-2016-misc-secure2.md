@@ -15,15 +15,13 @@ Solved by 83 team(s)
 
 # Solution
 
-Just like the previous Sec-Coding 1, we get a link to a web ui where we should upload patched c++ code.
+Just like the previous Sec-Coding 1, we get a link to a web UI where we should upload patched C++ code.
 
-We are provided with windows c++ code that prints a repeated message based on the input.
+We are provided with windows C++ code that prints a repeated message based on the input.
 
-The original code was pretty bad so I simply rewrote it completely and this solved all the security issues.
+The original code was pretty bad so I simply rewrote it completely and this solved all the security issues. There was a bug that I had to re-implement. If repeat count%10==0 the message should be blank.
 
-There was a bug that I had to re-implement. If repeat count%10==0 the message should be blank.
-
-The binary had to scream if the input was invalid. Empty output was not accepted.
+The binary also had to scream if the input was invalid. Empty output was not accepted.
 
 ~~~c++
 
