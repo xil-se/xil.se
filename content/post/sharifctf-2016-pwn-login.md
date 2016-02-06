@@ -35,7 +35,7 @@ It is a server that starts a new handler thread for each incoming TCP connection
 There are several strange things going on here.
 
 - Username and password are both able to overwrite the stack.
-- The stack value `authorized` is read but never written to.
+- The stack variable `authorized` is read but never written to.
 
 I was over thinking here and thought awesome - let's smash the stack jump into the true case in the if clause and get the flag. So I spent some time trying to get a nice ROP to do what I wanted. Big waste of time.
 
@@ -58,7 +58,7 @@ r.sendline("\x01"*(1044)) # password
 print r.recv()
 ~~~
 
-Running it gets us the flag immediately.
+Running it gives us the flag immediately.
 
 ~~~
 Please enter your username and then press enter: Hello
