@@ -30,7 +30,7 @@ It is a server that starts a new handler thread for each incoming TCP connection
 
 - The handler function prints a welcome message and reads your username and password.
 - Then it checks if a stack variable, let's call it `authorized`, is `1`.
-- If true, read the flag from file system and prints it.
+- If true, reads the flag from file system and prints it.
 
 There are several strange things going on here.
 
