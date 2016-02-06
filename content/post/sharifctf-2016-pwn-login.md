@@ -26,7 +26,7 @@ We are provided with a x86-64 linux executable:
 Question: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=76aad63504451c70d8aa4e72299d2821fcf1b9f1, stripped
 ~~~
 
-It is a server that starts a new thread that handles each incoming TCP connection on port 27515.
+It is a server that starts a new handler thread for each incoming TCP connection on port 27515.
 
 - The handler function prints a welcome message and reads your username and password.
 - Then it checks if a stack variable, let's call it `authorized`, is `1`.
