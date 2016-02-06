@@ -33,10 +33,11 @@ It is a server that starts a new thread that handles each incoming TCP connectio
 - If true, read the flag from file system and prints it.
 
 There are several strange things going on here.
+
 - Username and password are both able to overwrite the stack.
 - The stack value `authorized` is read but never written to.
 
-I was over thinking here and thought awesome - let's smash the stack jump into the true case in the if clause and get the flag. So I spent of time trying to get a nice ROP to do what I wanted. Big waste of time.
+I was over thinking here and thought awesome - let's smash the stack jump into the true case in the if clause and get the flag. So I spent some time trying to get a nice ROP to do what I wanted. Big waste of time.
 
 It turns out that the stack value `authorized` is located after both username and password, so the solution was to just fill the stack with \x01 and get the flag.
 
