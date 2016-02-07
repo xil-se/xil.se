@@ -41,7 +41,7 @@ I was over thinking here and thought awesome - let's smash the stack jump into t
 
 It turns out that the stack value `authorized` is located after both username and password, so the solution was to just fill the stack with \x01 and get the flag.
 
-~~~
+~~~python
 #!/usr/bin/env python2
 
 from pwn import *
