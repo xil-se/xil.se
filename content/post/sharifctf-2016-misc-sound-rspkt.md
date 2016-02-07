@@ -94,6 +94,8 @@ infer the bloggers credentials.
 
 Going back to the credentials input, I came up with the following candidates:
 
+Username:
+
 | Intensity | Candidates    |
 |-----------|---------------|
 | 60.79     | `q`, `a`, `z` |
