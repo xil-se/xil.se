@@ -7,15 +7,15 @@ title = "SharifCTF 2016 Hack By The Sound (Misc 200) Writeup"
 
 # Problem
 
-> A well known blogger has came to a hotel that we had good relationships with its staffs. > >
+> A well known blogger has came to a hotel that we had good relationships with its staffs.
+>
 > We tried to capture the sound of his room by placing a microphone inside the desk.
 >
-> We have recorded the sound about the time that he has typed a text in his blogg. You could >
+> We have recorded the sound about the time that he has typed a text in his blogg. You could
 > find the text he typed in "Blog Text.txt".
 >
-> We reduce noises somehow and found that many characters may have the same keysound. Also >
->
-> we know that he use meaningful username and password.
+> We reduce noises somehow and found that many characters may have the same keysound. Also
+we know that he use meaningful username and password.
 >
 > Could you extract the username and password of his blog?
 >
