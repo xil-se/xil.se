@@ -39,7 +39,7 @@ There are several strange things going on here.
 
 I was over thinking here and thought awesome - let's smash the stack, jump into the true case in the if clause and get the flag. So I spent some time trying to get a nice ROP to do what I wanted. Big waste of time.
 
-It turns out that the stack value `authorized` is located after both username and password, so the solution was to just fill the stack with \x01 and get the flag.
+It turns out that the stack variable `authorized` is located after both username and password, so the solution was to just fill the stack with \x01 and get the flag.
 
 ~~~python
 #!/usr/bin/env python2
