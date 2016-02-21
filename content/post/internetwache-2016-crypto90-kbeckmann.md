@@ -2,7 +2,7 @@
 authors = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-02-20T23:44:08+01:00"
-title = "InternetWache 2016 Bank (Crypto 60) Writeup"
+title = "InternetWache 2016 Bank (Crypto 90) Writeup"
 
 +++
 
