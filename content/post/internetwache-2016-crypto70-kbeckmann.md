@@ -66,16 +66,16 @@ import itertools
 c = [chr(x) for x in range(ord('A'), ord('z') + 1)]
 combos = [''.join(c) for c in itertools.combinations(c, 4)]
 for a in combos:
-	username = "A"*18 + a
+	x = "A"*18 + a
 	hash = myhash(username)
 	if hash == '00006800007d':
-		print username
+		print x
 		break
 ~~~
 
 The output will be `AAAAAAAAAAAAAAAAAAMdnx` after a couple of minutes depending on your hardware.
 
-Entering a correct username gives us the flag:
+Entering the generated output gives us the flag:
 ~~~
 $ nc 188.166.133.53 10009
 You need to provide your proof of work: A sha1 hash with the last two bytes set to 0. It has 30888409 as the prefix. It should match ^[0-9a-z]{15}$
