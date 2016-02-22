@@ -67,7 +67,7 @@ c = [chr(x) for x in range(ord('A'), ord('z') + 1)]
 combos = [''.join(c) for c in itertools.combinations(c, 4)]
 for a in combos:
 	x = "A"*18 + a
-	hash = myhash(username)
+	hash = myhash(x)
 	if hash == '00006800007d':
 		print x
 		break
