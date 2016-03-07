@@ -3,13 +3,15 @@ authors = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-03-07T17:00:00+01:00"
 description = ""
-title = "Boston Key Party 2016 JIT In My Pants (Reverse) Writeup"
+title = "Boston Key Party 2016 Jit in my pants (RE 3) Writeup"
 
 +++
 
 # Problem
 
-Jit in my pants - 3 - 38 solves : reversing: Because reversing an obfuscated jit'ed virtual machine for 3 points is fun!
+> Because reversing an obfuscated jit'ed virtual machine for 3 points is fun!
+
+(re 3, solved by 38)
 
 # Solution
 
