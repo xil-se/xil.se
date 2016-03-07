@@ -23,9 +23,9 @@ The way I solved the easy binary was to just put a breakpoint in `write` because
 
 But the new binary wasn't that easy. They encrypted the flag.
 
-I put a breakpoint in `write` again, but this time i made a core dump at this point by invoking `generate-core-file` from GDB.
+I put a breakpoint in `write` again, but this time I made a core dump at this point by invoking `generate-core-file` from GDB.
 
-Then I loaded the coredump in a proper reverse enginnering tool and could start analysing it.
+Then I loaded the core dump in a proper reverse engineering tool and could start analyzing it.
 
 From GDB I already knew the address of the code that invoked write, but it turns out that this was coming from the libc flush. The backtrace wasn't interesting. I want to know who generated the text. After setting a couple of hardware write breakpoints using `watch` I tracked down the code that actually generates the output. I then continued the core dump analysis in this location.
 
@@ -44,7 +44,7 @@ for i in len(userflag):
 return 1
 ~~~
 
-So I write a python oneliner that decrypts the flag:
+So I wrote a python one-liner that decrypts the flag:
 
 ~~~
 s = "FMTEPB}U3`_YEl0jj_hYcpp0emuYcv_Yu4Y355<w"
@@ -53,4 +53,4 @@ s = "FMTEPB}U3`_YEl0jj_hYcpp0emuYcv_Yu4Y355<w"
 
 This in turn reveals the flag: **BKPCTF{S1de_Ch4nnel_att4cks_are_s0_1338}**.
 
-The easy binary's flag was `BKPCTF{S1de_Ch4nnel_att4cks_are_3asier_than_st4tic_analySis}`, for the record.
+The flag of the easy binary was `BKPCTF{S1de_Ch4nnel_att4cks_are_3asier_than_st4tic_analySis}` for the record.
