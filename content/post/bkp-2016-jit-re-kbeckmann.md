@@ -9,7 +9,7 @@ title = "Boston Key Party 2016 JIT In My Pants (Reverse) Writeup"
 
 # Problem
 
-Don't have the description anymore but something like "You really want to reverse JIT code for 3 points?".
+Jit in my pants - 3 - 38 solves : reversing: Because reversing an obfuscated jit'ed virtual machine for 3 points is fun!
 
 # Solution
 
