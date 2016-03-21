@@ -95,7 +95,7 @@ Oh look, more information.
 
 It is possible to extract the trees using `btrfs restore -r <id>`:
 ```
-$ btrfs restore -r 278 disk.img restore4
+$ btrfs restore -r 278 disk.img restore3
 ```
 
 And now, let's see what we have.
