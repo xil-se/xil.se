@@ -26,7 +26,7 @@ For input=4, the solution is (-1, 1)
 
 # Solution
 
-It took a while for me to get what the challenge really was a bout. Instead of wasting time on trying to solve the problem, I did what a proper script kiddie does well - I used google. I found a very good [solution on stackoverflow](http://stackoverflow.com/a/19287714/1747702) that takes the number of iterations and returns the coordinates in O(1) time.
+It took a while for me to get what the challenge really was about. Instead of wasting time on trying to solve the problem, I did what a proper script kiddie does well - I used Google. I found a very good [solution on stackoverflow](http://stackoverflow.com/a/19287714/1747702) that takes the number of iterations and returns the coordinates in O(1) time.
 
 The challenge input is a huge number, sometimes over 1024 bits in length, so we need to support that.
 
