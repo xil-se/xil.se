@@ -3,7 +3,7 @@ authors = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-03-28T00:30:27+02:00"
 description = ""
-title = "pwn2win 2016 Square Infinite Spiral Writeup"
+title = "Pwn2Win 2016 Square Infinite Spiral Writeup"
 
 +++
 

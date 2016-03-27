@@ -3,7 +3,7 @@ authors = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-03-28T00:52:12+02:00"
 description = ""
-title = "pwn2win 2016 QRGrams kbeckmann"
+title = "Pwn2Win 2016 QRGrams Writeup"
 
 +++
 
