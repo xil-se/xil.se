@@ -22,22 +22,22 @@ We are provided with a x86-64 linux binary:
 dMd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.24, BuildID[sha1]=2643fecd383362fe9593ef8605a9ce882a85a38a, not stripped
 ~~~
 
-The decompiled binary tells us what's going on straight away.
+After looking at the disassembly, we find a series of hard coded checks.
 
 It's simply checking the md5 sum of the input for a hard coded value.
 
 ~~~c++
-  std::operator<<<std::char_traits<char>>(&std::cout, "Enter the valid key!\n", envp);
+  print("Enter the valid key!");
   ...
-  md5(&v41, &v40);
+  md5(...);
   ...
-  if ( *(_BYTE *)v42 != 55
-    || *(_BYTE *)(v42 + 1) != 56
-    || *(_BYTE *)(v42 + 2) != 48
+  if ( buf[0] != 55
+    || buf[1] != 56
+    || buf[2] != 48
 ...snip....
-    || *(_BYTE *)(v42 + 29) != 53
-    || *(_BYTE *)(v42 + 30) != 99
-    || *(_BYTE *)(v42 + 31) != 48 )
+    || buf[29] != 53
+    || buf[30] != 99
+    || buf[31] != 48 )
   {
     // yay got the flag
 ~~~
