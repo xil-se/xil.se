@@ -6,9 +6,6 @@ description = ""
 title = "Is eval safe yet? Arbitrary code execution in Python"
 +++
 
-Is eval safe yet? Arbitrary code execution in Python
-====================================================
-
 TL;DR
 -----
 
