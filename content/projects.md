@@ -7,4 +7,6 @@ title = "Projects"
 
 +++
 
-Here we will put all our projects!
+<ul class="posts">
+  <li><a href="/post/projects/rgbpad/rgbpad-1/">RGBPad</a></li>
+</ul>
