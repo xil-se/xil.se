@@ -25,6 +25,7 @@ preserveTaxonomyNames = true
 
 [params]
     avatar = "/images/logo.svg"
+    author = "xil.se"
     rss = true
     home_mode = "posts"
 
