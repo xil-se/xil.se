@@ -26,6 +26,7 @@ preserveTaxonomyNames = true
 [params]
     avatar = "/images/logo.svg"
     rss = true
+    home_mode = "posts"
 
 [params.social]
     GitHub = "xil-se"
@@ -33,7 +34,13 @@ preserveTaxonomyNames = true
     Email   = "hello@xil.se"
 
 
-[[menu.main]]
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
     name = "Categories"
     url = "/categories/"
-
+    weight = 2
