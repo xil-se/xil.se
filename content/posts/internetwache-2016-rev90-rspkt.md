@@ -1,5 +1,5 @@
 +++
-authors = "rspkt"
+author = "rspkt"
 categories = [ "writeups" ]
 date = "2016-02-21T18:18:38+01:00"
 title = "Internetwache CTF 2016 The Cube (Rev 90) Writeup"

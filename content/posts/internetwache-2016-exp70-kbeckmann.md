@@ -1,5 +1,5 @@
 +++
-authors = "kbeckmann"
+author = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-02-21T00:08:47+01:00"
 title = "InternetWache 2016 FlagStore (Exploit 70) Writeup"

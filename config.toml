@@ -16,15 +16,12 @@ preserveTaxonomyNames = true
   nofollowLinks = true
   noreferrerLinks = true
 
-[author]
-	name = "xil.se"
-
 [Permalinks]
  post = "/:year/:filename/"
 
 [taxonomies]
     category = "categories"
-    author = "authors"
+    author = "author"
 
 [params]
     avatar = "/images/logo.svg"

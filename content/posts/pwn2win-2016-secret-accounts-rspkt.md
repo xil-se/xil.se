@@ -1,5 +1,5 @@
 +++
-authors = "rspkt"
+author = "rspkt"
 categories = [ "writeups" ]
 date = "2016-03-28T11:22:00+01:00"
 title = "Pwn2Win CTF 2016 Secret Accounts (Py 80) Writeup"

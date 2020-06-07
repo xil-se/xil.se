@@ -1,5 +1,5 @@
 +++
-authors = "arturo182"
+author = "arturo182"
 categories = [ "writeups" ]
 date = "2016-02-21T12:56:49+01:00"
 title = "Internetwache CTF 2016 The Hidden Message (Misc 50) Writeup"

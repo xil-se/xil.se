@@ -1,5 +1,5 @@
 +++
-authors = "rspkt"
+author = "rspkt"
 categories = [ "security" ]
 date = "2017-01-14T16:00:00+01:00"
 description = ""

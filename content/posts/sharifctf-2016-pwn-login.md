@@ -1,5 +1,5 @@
 +++
-authors = "kbeckmann"
+author = "kbeckmann"
 categories = [ "writeups" ]
 date = "2016-02-06T22:31:14+01:00"
 title = "SharifCTF 2016 Login to System (PWN 200) Writeup"
