@@ -1,31 +1,42 @@
-baseurl = "https://www.xil.se/"
+baseurl = "https://blog.xil.se/"
 languageCode = "en-us"
 title = "Blog"
 canonifyurls = true
-theme = "hyde-x"
+theme = "LeaveIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+
+preserveTaxonomyNames = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
 
 [author]
 	name = "xil.se"
+
+[Permalinks]
+ post = "/:year/:filename/"
 
 [taxonomies]
     category = "categories"
     author = "authors"
 
 [params]
-    highlight = "github"
-    googleAnalytics = "UA-73118897-1"
-    github = "https://github.com/xil-se"
-    twitter = "https://twitter.com/xil_se_ctf"
+    avatar = "/images/logo.svg"
     rss = true
 
-[[menu.main]]
-    name = "Archive"
-    url = "/post/"
+[params.social]
+    GitHub = "xil-se"
+    Twitter = "xil_hackerspace"
+    Email   = "hello@xil.se"
+
 
 [[menu.main]]
     name = "Categories"
     url = "/categories/"
 
-[[menu.main]]
-    name = "Projects"
-    url = "/projects/"
