@@ -1,5 +1,5 @@
 +++
-authors = "kbeckmann"
+author = "kbeckmann"
 categories = [ "projects" ]
 date = "2016-11-23T10:00:00+01:00"
 description = ""
